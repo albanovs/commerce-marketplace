@@ -21,10 +21,21 @@
   background-color: white;
 }
 
-@media(max-width: 420px){
+.slick-next {
+  right: 0;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-prev::before,
+.slick-next::before {
+  color: transparent;
+}
+
+@media (max-width: 420px) {
   .slick-dots li button:before {
     content: "";
     width: 7px;
     height: 7px;
   }
-} 
+}
