@@ -1,0 +1,30 @@
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  top: -60px;
+}
+
+.slick-dots li button:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: white;
+}
+
+@media(max-width: 420px){
+  .slick-dots li button:before {
+    content: "";
+    width: 7px;
+    height: 7px;
+  }
+} 
