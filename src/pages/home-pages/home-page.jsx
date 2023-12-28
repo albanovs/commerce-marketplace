@@ -3,7 +3,7 @@ import PopularItems from "../../components/popular-items/popular-items";
 import SLider from "../../components/slider/slider";
 import VipItem from "../../components/vip-item/vip-item";
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <div>
       <div className="mx-auto lg:w-[1170px]">
@@ -26,3 +26,5 @@ export const HomePage = () => {
     </div>
   );
 };
+
+export default HomePage;
