@@ -43,46 +43,52 @@ export const Header = () => {
         className={`lg:w-[1170px]
             transition duration-500 lg:translate-x-0
             ${res}
-            lg:mx-auto pl-5 pr-20 py-5 lg:pl-0 lg:pr-0 lg:py-0 lg:h-20 h-[100vh]
-            lg:static fixed top-0 left-0 z-50 bg-[#F0F0F4] flex lg:flex-row flex-col gap-5 lg:justify-evenly lg:items-center`}
+            lg:mx-auto  lg:h-20 w-full h-[100vh]
+            lg:static fixed top-0 left-0 z-50 `}
       >
-        <IoMdClose
+        <div
           onClick={() => setRes("translate-x-[-100%]")}
-          className="absolute right-5 lg:hidden"
-        />
-        <NavLink
-          to={"/"}
-          className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2"
-        >
-          <FaShop />
-          Магазины
-        </NavLink>
-        <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
-          Новинки
-        </div>
-        <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
-          <FaFire />
-          Товары по акции
-        </div>
-        <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
-          Мужские
-        </div>
-        <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
-          Женские
-        </div>
-        <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
-          Деткские
-        </div>
-        <NavLink
-          to={"/accessories"}
-          className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2"
-        >
-          <CgAppleWatch />
-          Аксессуары
-        </NavLink>
-        <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
-          <MdOutlineDesktopWindows />
-          Электроника
+          className=" bg-black opacity-50 absolute  lg:static top-0 left-0 right-0 bottom-0 "
+        ></div>
+        <div className="flex lg:flex-row bg-[#F0F0F4] h-[100vh] lg:h-20 flex-col gap-5 lg:justify-evenly lg:items-center pl-5 pr-20 py-5 lg:pl-0 lg:pr-0 lg:py-0 lg:static absolute top-0 bottom-0 left-0">
+          <IoMdClose
+            onClick={() => setRes("translate-x-[-100%]")}
+            className="absolute right-5 lg:hidden"
+          />
+          <NavLink
+            to={"/"}
+            className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2"
+          >
+            <FaShop />
+            Магазины
+          </NavLink>
+          <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
+            Новинки
+          </div>
+          <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
+            <FaFire />
+            Товары по акции
+          </div>
+          <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
+            Мужские
+          </div>
+          <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
+            Женские
+          </div>
+          <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
+            Деткские
+          </div>
+          <NavLink
+            to={"/accessories"}
+            className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2"
+          >
+            <CgAppleWatch />
+            Аксессуары
+          </NavLink>
+          <div className="cursor-pointer hover:text-[#1C62CD] font-semibold hover:transition-all flex items-center gap-2">
+            <MdOutlineDesktopWindows />
+            Электроника
+          </div>
         </div>
       </div>
     </div>

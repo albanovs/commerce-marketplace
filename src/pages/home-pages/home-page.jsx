@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <div>
       <div className="mx-auto lg:w-[1170px]">
-        <div className="mt-20 mb-10 flex lg:flex-row flex-col items-center justify-between">
+        <div className="mt-10 mb-10 flex lg:flex-row flex-col items-center justify-between">
           <SLider />
           <VipItem />
         </div>
